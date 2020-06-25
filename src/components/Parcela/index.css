@@ -1,0 +1,26 @@
+.container {
+    display: flex; 
+    flex-direction: row;
+    border-width: 0.5px;
+    border-style: solid;
+    border-radius: 13px;
+    margin: 5px;
+    width: 10%;
+    height: 35%;
+    padding: 0.2cm;
+}
+
+.container-numero {
+    display: flex;
+    flex: 0.2;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-valores {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
