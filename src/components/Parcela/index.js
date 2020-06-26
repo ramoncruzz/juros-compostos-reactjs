@@ -9,8 +9,8 @@ const Parcela =({numero, valor, juros, percentual, sentido}) =>{
         </div>
         <div className="container-valores">
             <span> {valor}</span>
-            <span> +R$ {juros}</span>
-            <span> {percentual} %</span>
+            <span> {juros}</span>
+            <span> {percentual} </span>
         </div>
     </div>
     )
@@ -18,14 +18,14 @@ const Parcela =({numero, valor, juros, percentual, sentido}) =>{
 
 Parcela.propTypes ={
     sentido: PropTypes.bool,
-    numero: PropTypes.number,
-    valor: PropTypes.number.isRequired,
-    percentual: PropTypes.number,
+    numero: PropTypes.string,
+    valor: PropTypes.string.isRequired,
+    percentual: PropTypes.string,
 }
 
 Parcela.defaultProps = {
-    numero: 0,
-    percentual: 0,
+    numero: undefined,
+    percentual: undefined,
     sentido: true
 }
 
