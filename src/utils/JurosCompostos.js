@@ -33,12 +33,12 @@ const calculaSerieJuros = ( montanteInicial, taxaJuros, periodo, crescente ) =>{
             
             if(crescente){
                 parcela.montanteAcumulado = valorFinanceiro(acumulado);
-                parcela.valorParcela = `+${valorFinanceiro(valorParcela)}`;
+                parcela.valorParcela = `+ ${valorFinanceiro(valorParcela)}`;
                 parcela.percentual = valorPercentual(percentualParcela); 
             }else{
                 parcela.montanteAcumulado = valorFinanceiro(acumulado);
-                parcela.valorParcela = `-${valorFinanceiro(valorParcela)}`;
-                parcela.percentual = `-${valorPercentual(percentualParcela)}`; 
+                parcela.valorParcela = `- ${valorFinanceiro(valorParcela)}`;
+                parcela.percentual = `- ${valorPercentual(percentualParcela)}`; 
             }
             resultado.push(parcela);
         }

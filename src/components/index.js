@@ -1,7 +1,7 @@
 import Parcela from './Parcela';
-import Conteiner from './ConteinerParcelas';
+import Container from './ConteinerParcelas';
 
 export {
     Parcela,
-    Conteiner
+    Container
 }
